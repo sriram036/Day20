@@ -10,8 +10,8 @@ public class UserRegistrationTest {
 
     @Test
     public void givenNameShouldReturnCorrectOrNot(){
-        System.out.print("\nEnter First Name : ");
-        String string = "Sriram";
+        System.out.print("\nEnter Last Name : ");
+        String string = "Ravi";
         Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}$");
         Matcher matcher = pattern.matcher(string);
         System.out.println(string);
