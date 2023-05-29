@@ -9,12 +9,12 @@ import java.util.regex.Pattern;
 public class UserRegistrationTest {
 
     @Test
-    public void givenNameShouldReturnCorrectOrNot(){
-        System.out.print("\nEnter Last Name : ");
-        String string = "Ravi";
-        Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}$");
-        Matcher matcher = pattern.matcher(string);
-        System.out.println(string);
+    public void givenMobileNumberShouldReturnCorrectOrNot(){
+        System.out.print("\nEnter Mobile Number : ");
+        String mobileNumber = "911234567890";
+        Pattern pattern = Pattern.compile("^91[0-9]{10}$");
+        Matcher matcher = pattern.matcher(mobileNumber);
+        System.out.println(mobileNumber);
         Assertions.assertEquals(true,matcher.matches());
     }
 }
